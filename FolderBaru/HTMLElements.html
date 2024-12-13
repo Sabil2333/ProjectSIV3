@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Elements</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="editor.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="px-3 mb-3">
+      <h5 class="d-flex align-items-center">
+        <i class="bi bi-filetype-html"></i>
+        &nbsp; Tutorial HTML
+      </h5>
+    </div>
+    
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a href="HTMLIntroduction.html" role="button" aria-expanded="false" aria-controls="HTMLIntrodcution">
+          <i class="bi bi-caret-right-fill me-2"></i> HTML Introduction
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="HTMLBasic.html" role="button" aria-expanded="false" aria-controls="HTMLBasic">
+          <i class="bi bi-caret-right-fill me-2"></i> HTML Basic
+        </a>
+      </li>
+      <li class="nav-item">
+        <a data-bs-toggle="collapse" href="#HTMLElements" role="button" aria-expanded="false" aria-controls="HTMLElements">
+          <i class="bi bi-caret-right-fill me-2"></i> HTML Elements
+        </a>
+        <div class="collapse show" id="HTMLElements">
+            <ul class="nav flex-column">
+              <li><a href="#" class="side-link" side-section="HTML_Color" >HTML Color</a></li>
+              <li><a href="#" class="side-link" side-section="HTML_Tag">HTML Tag</a></li>
+              <li><a href="#" class="side-link" side-section="HTML_Block">HTML Block & Inline</a></li>
+            </ul>
+          </div>
+      </li>
+      <li class="nav-item">
+        <a href="HTMLForms.html" role="button" aria-expanded="false" aria-controls="HTMLForms">
+          <i class="bi bi-caret-right-fill me-2"></i> HTML Forms
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Navbar Content -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="#" class="active" data-section="html">HTML</a></li>
+      <li><a href="index-css.html" data-section="css">CSS</a></li>
+      <li><a href="index-js.hmtl" data-section="javascript">JavaScript</a></li>
+      <li><a href="index-cpp.html" data-section="cpp">CPP</a></li>
+      </ul>
+    </nav>
+    </div>
+  </nav>
+
+  <!-- Content Sections -->
+  <div class="sections">
+    <div id="html" class="section active-section">
+      <h1>HTML Color</h1>
+      <hr class="border border-danger border-2 opacity-50">
+      <p class="h3">Seputar Mengenai Color HTML</p>
+      <p>
+        <span class="text-danger fw-bold">HTML Color</span> adalah fitur dalam 
+        <span class="text-danger fw-bold">HTML</span> yang digunakan untuk menentukan <em>warna</em> elemen pada halaman web. 
+        Warna dapat diterapkan pada <em>teks</em>, <em>latar belakang</em>, <em>border</em>, atau elemen lainnya menggunakan atribut 
+        <span class="text-danger fw-bold">HTML</span> atau <em>CSS</em>.
+    </p>
+    <p>Berikut adalah contoh dari beberapa warna yang ada di HTML :</p>
+    <div class="container mt-5">
+      <h3 class="mb-4">HTML Colors</h3>
+      <div class="row g-3">
+          <div class="col-md-3">
+              <div class="color-box" style="background-color: Tomato;">Tomato</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box" style="background-color: Orange;">Orange</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box" style="background-color: DodgerBlue;">DodgerBlue</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box" style="background-color: MediumSeaGreen;">MediumSeaGreen</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box gray" style="background-color: Gray;">Gray</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box" style="background-color: SlateBlue;">SlateBlue</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box" style="background-color: Violet;">Violet</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box gray" style="background-color: LightGray;">LightGray</div>
+          </div>
+      </div>
+      <p class="mt-4">
+          HTML Mendukung <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">140 standard color names</a>.
+      </p>
+  </div>
+
+      <br>
+      <p>Adapun Codingan dari beberapa Warna di atas : </p>
+      <div class="fluid-container">
+        <!-- Card -->
+        <div class="card">
+            <!-- Header -->
+            <div class="editor-header">
+                <div class="circle red"></div>
+                <div class="circle yellow"></div>
+                <div class="circle green"></div>
+                <div class="ms-3">Contoh Sederhana</div>
+            </div>
+    
+            <!-- Code Container -->
+            <div class="code-container">
+                <pre>
+&lt;h1 style="background-color:Tomato;"&gt;Tomato&lt;/h1&gt;
+&lt;h1 style="background-color:Orange;"&gt;Orange&lt;/h1&gt;
+&lt;h1 style="background-color:DodgerBlue;"&gt;DodgerBlue&lt;/h1&gt;
+&lt;h1 style="background-color:MediumSeaGreen;"&gt;MediumSeaGreen&lt;/h1&gt;
+&lt;h1 style="background-color:Gray;"&gt;Gray&lt;/h1&gt;
+&lt;h1 style="background-color:SlateBlue;"&gt;SlateBlue&lt;/h1&gt;
+&lt;h1 style="background-color:Violet;"&gt;Violet&lt;/h1&gt;
+&lt;h1 style="background-color:LightGray;"&gt;LightGray&lt;/h1&gt;
+                </pre>
+            </div>
+    
+            <!-- Button -->
+            <div class="btn-container">
+                <a href="#" class="btn-try">Try it Yourself »</a>
+            </div>
+        </div>
+    </div>
+    <p>
+      <span class="text-danger fw-bold">Penjelasan Contoh Warna HTML</span>: Dalam contoh ini, kita membuat 
+      <span class="text-danger fw-bold">HTML</span> untuk menyusun konten menggunakan elemen seperti heading, div, link, dan paragraf.
+    </p>
+    <p>
+      <span class="text-danger fw-bold">Nilai Warna</span>: Nilai warna dalam 
+      <span class="text-danger fw-bold">HTML</span> digunakan untuk menentukan warna elemen. Nilai ini dapat ditentukan menggunakan berbagai format seperti 
+      <em>hexadecimal</em>, <em>RGB</em>, <em>RGBA</em>, <em>HSL</em>, <em>HSLA</em>, nama warna, dan kata kunci warna sistem.
+    </p>
+    <p>
+      <span class="text-danger fw-bold">Nilai Warna RGB</span>: RGB, yang merupakan singkatan dari 
+      <em>Red</em>, <em>Green</em>, dan <em>Blue</em>, adalah metode yang digunakan dalam 
+      <span class="text-danger fw-bold">CSS</span> untuk mendeskripsikan warna.
+      RGB bekerja dengan mencampurkan jumlah tertentu dari tiga warna primer, masing-masing dengan nilai antara 0 hingga 255. 
+      Dengan menyesuaikan nilai ini, kita dapat menghasilkan berbagai macam warna, memungkinkan terciptanya palet warna yang beragam untuk situs web.
+    </p>
+    <p>
+      <span class="fw-bold">Properti Nilai Warna RGB</span>: Beberapa propertinya adalah:<br>
+      - Representasi RGB ditulis sebagai <code>rgb(red, green, blue)</code>.<br>
+      - Dengan menyesuaikan nilai dari 0 hingga 255, kita dapat menghasilkan 16.777.216 warna unik.<br>
+      - Misalnya, <code>rgb(0, 255, 0)</code> menghasilkan warna hijau karena nilai hijau berada di maksimum (255), sementara merah dan biru bernilai 0.<br>
+      - Sebaliknya, <code>rgb(0, 0, 255)</code> menghasilkan biru, dengan kanal biru diatur ke maksimum (255), dan merah serta hijau diatur ke 0.<br>
+      - Untuk menghasilkan hitam, semua parameter warna diatur ke 0 (<code>rgb(0, 0, 0)</code>), dan untuk putih, semua parameter diatur ke maksimum (<code>rgb(255, 255, 255)</code>).
+    </p>
+    <div class="card">
+        <code>
+        // Blue background <br>
+&lt;p style="background-color: rgb(0, 0, 255);"&gt;
+  Is the sky background Blue by using RGB
+&lt;/p&gt;
+        </code>
+      </div>
+  </div>
+
+
+
+    <div id="HTML_Color" class="section">
+      <h1>HTML Color</h1>
+      <hr class="border border-danger border-2 opacity-50">
+      <p class="h3">Seputar Mengenai Color HTML</p>
+      <p>
+        <span class="text-danger fw-bold">HTML Color</span> adalah fitur dalam 
+        <span class="text-danger fw-bold">HTML</span> yang digunakan untuk menentukan <em>warna</em> elemen pada halaman web. 
+        Warna dapat diterapkan pada <em>teks</em>, <em>latar belakang</em>, <em>border</em>, atau elemen lainnya menggunakan atribut 
+        <span class="text-danger fw-bold">HTML</span> atau <em>CSS</em>.
+    </p>
+    <p>Berikut adalah contoh dari beberapa warna yang ada di HTML :</p>
+    <div class="container mt-5">
+      <h3 class="mb-4">HTML Colors</h3>
+      <div class="row g-3">
+          <div class="col-md-3">
+              <div class="color-box" style="background-color: Tomato;">Tomato</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box" style="background-color: Orange;">Orange</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box" style="background-color: DodgerBlue;">DodgerBlue</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box" style="background-color: MediumSeaGreen;">MediumSeaGreen</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box gray" style="background-color: Gray;">Gray</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box" style="background-color: SlateBlue;">SlateBlue</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box" style="background-color: Violet;">Violet</div>
+          </div>
+          <div class="col-md-3">
+              <div class="color-box gray" style="background-color: LightGray;">LightGray</div>
+          </div>
+      </div>
+      <p class="mt-4">
+          HTML Mendukung <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">140 standard color names</a>.
+      </p>
+  </div>
+
+      <br>
+      <p>Adapun Codingan dari beberapa Warna di atas : </p>
+      <div class="fluid-container">
+        <!-- Card -->
+        <div class="card">
+            <!-- Header -->
+            <div class="editor-header">
+                <div class="circle red"></div>
+                <div class="circle yellow"></div>
+                <div class="circle green"></div>
+                <div class="ms-3">Contoh Sederhana</div>
+            </div>
+    
+            <!-- Code Container -->
+            <div class="code-container">
+                <pre>
+&lt;h1 style="background-color:Tomato;"&gt;Tomato&lt;/h1&gt;
+&lt;h1 style="background-color:Orange;"&gt;Orange&lt;/h1&gt;
+&lt;h1 style="background-color:DodgerBlue;"&gt;DodgerBlue&lt;/h1&gt;
+&lt;h1 style="background-color:MediumSeaGreen;"&gt;MediumSeaGreen&lt;/h1&gt;
+&lt;h1 style="background-color:Gray;"&gt;Gray&lt;/h1&gt;
+&lt;h1 style="background-color:SlateBlue;"&gt;SlateBlue&lt;/h1&gt;
+&lt;h1 style="background-color:Violet;"&gt;Violet&lt;/h1&gt;
+&lt;h1 style="background-color:LightGray;"&gt;LightGray&lt;/h1&gt;
+                </pre>
+            </div>
+    
+            <!-- Button -->
+            <div class="btn-container">
+                <a href="#" class="btn-try">Try it Yourself »</a>
+            </div>
+        </div>
+    </div>
+    <p>
+      <span class="text-danger fw-bold">Penjelasan Contoh Warna HTML</span>: Dalam contoh ini, kita membuat 
+      <span class="text-danger fw-bold">HTML</span> untuk menyusun konten menggunakan elemen seperti heading, div, link, dan paragraf.
+    </p>
+    <p>
+      <span class="text-danger fw-bold">Nilai Warna</span>: Nilai warna dalam 
+      <span class="text-danger fw-bold">HTML</span> digunakan untuk menentukan warna elemen. Nilai ini dapat ditentukan menggunakan berbagai format seperti 
+      <em>hexadecimal</em>, <em>RGB</em>, <em>RGBA</em>, <em>HSL</em>, <em>HSLA</em>, nama warna, dan kata kunci warna sistem.
+    </p>
+    <p>
+      <span class="text-danger fw-bold">Nilai Warna RGB</span>: RGB, yang merupakan singkatan dari 
+      <em>Red</em>, <em>Green</em>, dan <em>Blue</em>, adalah metode yang digunakan dalam 
+      <span class="text-danger fw-bold">CSS</span> untuk mendeskripsikan warna.
+      RGB bekerja dengan mencampurkan jumlah tertentu dari tiga warna primer, masing-masing dengan nilai antara 0 hingga 255. 
+      Dengan menyesuaikan nilai ini, kita dapat menghasilkan berbagai macam warna, memungkinkan terciptanya palet warna yang beragam untuk situs web.
+    </p>
+    <p>
+      <span class="fw-bold">Properti Nilai Warna RGB</span>: Beberapa propertinya adalah:<br>
+      - Representasi RGB ditulis sebagai <code>rgb(red, green, blue)</code>.<br>
+      - Dengan menyesuaikan nilai dari 0 hingga 255, kita dapat menghasilkan 16.777.216 warna unik.<br>
+      - Misalnya, <code>rgb(0, 255, 0)</code> menghasilkan warna hijau karena nilai hijau berada di maksimum (255), sementara merah dan biru bernilai 0.<br>
+      - Sebaliknya, <code>rgb(0, 0, 255)</code> menghasilkan biru, dengan kanal biru diatur ke maksimum (255), dan merah serta hijau diatur ke 0.<br>
+      - Untuk menghasilkan hitam, semua parameter warna diatur ke 0 (<code>rgb(0, 0, 0)</code>), dan untuk putih, semua parameter diatur ke maksimum (<code>rgb(255, 255, 255)</code>).
+    </p>
+    <div class="card">
+        <code>
+        // Blue background <br>
+&lt;p style="background-color: rgb(0, 0, 255);"&gt;
+  Is the sky background Blue by using RGB
+&lt;/p&gt;
+        </code>
+      </div>
+    </div>
+    <div id="HTML_Tag" class="section">
+      <h1>HTML Tag</h1>
+        <hr class="border border-danger border-2 opacity-50">
+        <p class="h3">Apa itu Tag HTML ?</p>
+        <p>
+          <span class="text-danger fw-bold">Tag</span> dalam <span class="text-danger fw-bold">HTML</span> adalah elemen dasar yang digunakan untuk menentukan 
+          <em>struktur</em> dan <em>konten</em> pada halaman web. Tag biasanya ditulis dalam pasangan 
+          <span class="text-danger fw-bold">pembuka</span> dan <span class="text-danger fw-bold">penutup</span>, dengan 
+          <em>konten</em> berada di antaranya.
+        </p>
+        <br>
+        <p>
+          <span class="text-danger fw-bold">Struktur Dasar Tag HTML</span>:
+      </p>
+      <p>
+          - <span class="text-danger fw-bold">Tag Pembuka</span>: Memberitahu browser jenis elemen yang akan digunakan. 
+          Ditulis dalam kurung sudut (<code>&lt;&gt;</code>), misalnya: <code>&lt;p&gt;</code>.
+      </p>
+      <p>
+          - <span class="text-danger fw-bold">Tag Penutup</span>: Menandai akhir dari elemen, ditulis dengan menambahkan garis miring (/) sebelum nama tag, 
+          misalnya: <code>&lt;/p&gt;</code>.
+      </p>
+      <p>
+          - <span class="text-danger fw-bold">Konten</span>: Teks, gambar, atau elemen lainnya yang berada di antara tag pembuka dan penutup.
+      </p>
+      <p>
+        <span class="text-danger fw-bold">Contoh Tag Populer dalam HTML</span>:
+    </p>
+    <p>
+        <span class="fw-bold text-danger">Tag Teks</span>:<br>
+        - <code>&lt;h1&gt;</code> hingga <code>&lt;h6&gt;</code>: Untuk heading (judul).<br>
+        - <code>&lt;p&gt;</code>: Untuk paragraf.<br>
+        - <code>&lt;b&gt;</code> atau <code>&lt;strong&gt;</code>: Untuk teks tebal.<br>
+        - <code>&lt;i&gt;</code> atau <code>&lt;em&gt;</code>: Untuk teks miring.
+    </p>
+    <p>
+        <span class="fw-bold text-danger">Tag Media</span>:<br>
+        - <code>&lt;img&gt;</code>: Untuk gambar.<br>
+        - <code>&lt;video&gt;</code>: Untuk video.<br>
+        - <code>&lt;audio&gt;</code>: Untuk audio.
+    </p>
+    <p>
+        <span class="fw-bold text-danger">Tag Tabel</span>:<br>
+        - <code>&lt;table&gt;</code>: Untuk membuat tabel.<br>
+        - <code>&lt;tr&gt;</code>: Untuk baris tabel.<br>
+        - <code>&lt;td&gt;</code>: Untuk data tabel.
+    </p>
+    <p>
+        <span class="fw-bold text-danger">Tag Hyperlink</span>:<br>
+        - <code>&lt;a href="url"&gt;</code>: Untuk membuat tautan.
+    </p>
+    <br>
+    <p class="h3"> Contoh Coding Tag dan Hasilnya </p>
+    <div class="fluid-container">
+      <!-- Card -->
+      <div class="card">
+          <!-- Header -->
+          <div class="editor-header">
+              <div class="circle red"></div>
+              <div class="circle yellow"></div>
+              <div class="circle green"></div>
+              <div class="ms-3">Contoh Sederhana</div>
+          </div>
+  
+          <!-- Code Container -->
+          <div class="code-container">
+              <pre>
+
+<!-- Tag Teks -->
+<p class="h5">Tag Teks</p>
+&lt;h1&gt;Ini adalah heading 1&lt;/h1&gt;
+&lt;h2&gt;Ini adalah heading 2&lt;/h2&gt;
+&lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+&lt;b&gt;Teks ini tebal.&lt;/b&gt;
+&lt;i&gt;Teks ini miring.&lt;/i&gt;
+
+<!-- Tag Media -->
+<p class="h5">Tag Media</p>
+&lt;img src="image.jpg" alt="Gambar Contoh"&gt;
+&lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Browser Anda tidak mendukung video.
+&lt;/video&gt;
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Browser Anda tidak mendukung audio.
+&lt;/audio&gt;
+
+<!-- Tag Tabel -->
+<p class="h5">Tag Tabel</p>
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nama&lt;/th&gt;
+        &lt;th&gt;Usia&lt;/th&gt;
+        &lt;th&gt;Kota&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Ali&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+        &lt;td&gt;Jakarta&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Siti&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+        &lt;td&gt;Bandung&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+
+<!-- Tag Hyperlink -->
+<p class="h5"> Tag Hyperlink </p>
+&lt;a href="https://example.com"&gt;Kunjungi Situs&lt;/a&gt;
+              </pre>
+          </div>
+  
+          <!-- Button -->
+          <div class="btn-container">
+              <a href="#" class="btn-try">Try it Yourself »</a>
+          </div>
+      </div>
+  </div>
+    </div>
+    <div id="HTML_Block" class="section">
+      <h1>HTML Block & Inline</h1>
+        <hr class="border border-danger border-2 opacity-50">
+        <p class="h3"> Apa itu HTML Block & Inline?</p>
+        <p>
+          Dalam <span class="text-danger fw-bold">HTML</span>, elemen 
+          <span class="text-danger fw-bold">Block</span> dan 
+          <span class="text-danger fw-bold">Inline</span> adalah kategori elemen berdasarkan bagaimana elemen tersebut ditampilkan di halaman web. 
+          Keduanya memiliki peran penting dalam menentukan <em>struktur</em> dan <em>tata letak</em> sebuah halaman web.
+        </p>
+        <br>
+        <p class="h3">Block Element</p>
+        <p>
+          <span class="text-danger fw-bold">Block element</span> dalam 
+          <span class="text-danger fw-bold">HTML</span> adalah elemen yang secara default tampil sebagai blok atau bagian terpisah di halaman web. 
+          Elemen ini akan selalu memulai <em>baris baru</em> dan mengambil seluruh lebar yang tersedia dari kontainer induknya, terlepas dari panjang kontennya.
+      </p>
+      <p>
+          <span class="fw-bold text-danger">Karakteristik Utama Block Element</span>:
+      </p>
+      <p>
+          - <span class="fw-bold">Dimulai dari Baris Baru</span>: Setiap kali sebuah elemen blok digunakan, elemen berikutnya akan dimulai dari baris baru.
+      </p>
+      <p>
+          - <span class="fw-bold">Lebar Penuh Kontainer</span>: Elemen blok akan mengambil seluruh lebar kontainer induknya secara otomatis, bahkan jika kontennya pendek.
+      </p>
+      <p>
+          - <span class="fw-bold">Digunakan untuk Struktur Halaman</span>: Elemen blok sering digunakan untuk menyusun tata letak dan struktur utama halaman web, seperti paragraf, heading, dan daftar.
+      </p>
+      <p>
+          - <span class="fw-bold">Dapat Mengandung Elemen Lain</span>: Elemen blok dapat berisi elemen blok lain atau elemen inline.
+      </p>
+      <div class="container mt-1">
+        <h3 class="mb-4">Daftar Block Elements:</h3>
+        <div class="row">
+            <div class="col-3"><code>&lt;address&gt;</code></div>
+            <div class="col-3"><code>&lt;article&gt;</code></div>
+            <div class="col-3"><code>&lt;aside&gt;</code></div>
+            <div class="col-3"><code>&lt;blockquote&gt;</code></div>
+
+            <div class="col-3"><code>&lt;canvas&gt;</code></div>
+            <div class="col-3"><code>&lt;dd&gt;</code></div>
+            <div class="col-3"><code>&lt;div&gt;</code></div>
+            <div class="col-3"><code>&lt;dl&gt;</code></div>
+
+            <div class="col-3"><code>&lt;dt&gt;</code></div>
+            <div class="col-3"><code>&lt;fieldset&gt;</code></div>
+            <div class="col-3"><code>&lt;figcaption&gt;</code></div>
+            <div class="col-3"><code>&lt;figure&gt;</code></div>
+
+            <div class="col-3"><code>&lt;footer&gt;</code></div>
+            <div class="col-3"><code>&lt;form&gt;</code></div>
+            <div class="col-3"><code>&lt;h1&gt;-&lt;h6&gt;</code></div>
+            <div class="col-3"><code>&lt;header&gt;</code></div>
+
+            <div class="col-3"><code>&lt;hr&gt;</code></div>
+            <div class="col-3"><code>&lt;li&gt;</code></div>
+            <div class="col-3"><code>&lt;main&gt;</code></div>
+            <div class="col-3"><code>&lt;nav&gt;</code></div>
+
+            <div class="col-3"><code>&lt;noscript&gt;</code></div>
+            <div class="col-3"><code>&lt;ol&gt;</code></div>
+            <div class="col-3"><code>&lt;p&gt;</code></div>
+            <div class="col-3"><code>&lt;pre&gt;</code></div>
+
+            <div class="col-3"><code>&lt;section&gt;</code></div>
+            <div class="col-3"><code>&lt;table&gt;</code></div>
+            <div class="col-3"><code>&lt;tfoot&gt;</code></div>
+            <div class="col-3"><code>&lt;ul&gt;</code></div>
+
+            <div class="col-3"><code>&lt;video&gt;</code></div>
+        </div>
+    </div>
+    <br>
+    <br>
+      <p class="h3">Inline Element</p>
+      <p>
+        <span class="text-danger fw-bold">Inline Element</span> dalam 
+        <span class="text-danger fw-bold">HTML</span> adalah elemen yang ditampilkan di baris yang sama dengan konten atau elemen lainnya. 
+        Elemen ini tidak memulai <em>baris baru</em> secara default, dan lebar elemen hanya sebesar kontennya, bukan seluruh lebar kontainer.
+    </p>
+    <p>
+        <span class="fw-bold text-danger">Karakteristik Utama Inline Element:</span>
+    </p>
+    <p>
+        - <span class="fw-bold text-danger">Tidak Dimulai dari Baris Baru</span>: 
+        <span class="text-danger">Inline elements</span> tetap berada dalam baris yang sama dengan teks atau elemen lainnya.
+    </p>
+    <p>
+        - <span class="fw-bold text-danger">Lebarnya Hanya Sesuai Konten</span>: 
+        <span class="text-danger">Inline elements</span> tidak mengambil seluruh lebar kontainer. Lebarnya hanya mengikuti panjang konten yang ada di dalamnya.
+    </p>
+    <p>
+        - <span class="fw-bold text-danger">Digunakan untuk Konten Kecil</span>: 
+        <span class="text-danger">Inline elements</span> digunakan untuk elemen kecil yang biasanya menjadi bagian dari elemen blok, seperti teks tebal, tautan, atau gambar.
+    </p>
+    <p>
+        - <span class="fw-bold text-danger">Tidak Bisa Berisi Elemen Block</span>: Elemen inline hanya bisa berisi teks atau elemen inline lainnya, tidak dapat berisi elemen blok seperti <code>&lt;div&gt;</code> atau <code>&lt;p&gt;</code>.
+    </p>
+    <div class="container mt-1">
+      <h3 class="mb-4">Daftar Inline Elements:</h3>
+      <div class="row">
+          <div class="col-3"><code>&lt;a&gt;</code></div>
+          <div class="col-3"><code>&lt;abbr&gt;</code></div>
+          <div class="col-3"><code>&lt;acronym&gt;</code></div>
+          <div class="col-3"><code>&lt;b&gt;</code></div>
+
+          <div class="col-3"><code>&lt;bdo&gt;</code></div>
+          <div class="col-3"><code>&lt;big&gt;</code></div>
+          <div class="col-3"><code>&lt;br&gt;</code></div>
+          <div class="col-3"><code>&lt;button&gt;</code></div>
+
+          <div class="col-3"><code>&lt;cite&gt;</code></div>
+          <div class="col-3"><code>&lt;code&gt;</code></div>
+          <div class="col-3"><code>&lt;dfn&gt;</code></div>
+          <div class="col-3"><code>&lt;em&gt;</code></div>
+
+          <div class="col-3"><code>&lt;i&gt;</code></div>
+          <div class="col-3"><code>&lt;img&gt;</code></div>
+          <div class="col-3"><code>&lt;input&gt;</code></div>
+          <div class="col-3"><code>&lt;kbd&gt;</code></div>
+
+          <div class="col-3"><code>&lt;label&gt;</code></div>
+          <div class="col-3"><code>&lt;map&gt;</code></div>
+          <div class="col-3"><code>&lt;object&gt;</code></div>
+          <div class="col-3"><code>&lt;output&gt;</code></div>
+
+          <div class="col-3"><code>&lt;q&gt;</code></div>
+          <div class="col-3"><code>&lt;samp&gt;</code></div>
+          <div class="col-3"><code>&lt;script&gt;</code></div>
+          <div class="col-3"><code>&lt;select&gt;</code></div>
+
+          <div class="col-3"><code>&lt;small&gt;</code></div>
+          <div class="col-3"><code>&lt;span&gt;</code></div>
+          <div class="col-3"><code>&lt;strong&gt;</code></div>
+          <div class="col-3"><code>&lt;sub&gt;</code></div>
+
+          <div class="col-3"><code>&lt;sup&gt;</code></div>
+          <div class="col-3"><code>&lt;textarea&gt;</code></div>
+          <div class="col-3"><code>&lt;time&gt;</code></div>
+          <div class="col-3"><code>&lt;tt&gt;</code></div>
+
+          <div class="col-3"><code>&lt;var&gt;</code></div>
+      </div>
+  </div>
+    </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

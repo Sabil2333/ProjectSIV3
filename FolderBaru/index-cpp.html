@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Itroduction</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="editor.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="px-3 mb-3">
+      <h5 class="d-flex align-items-center">
+        <i class="bi bi-code-slash"></i>
+        &nbsp; Tutorial C++
+      </h5>
+    </div>
+    
+    <ul class="nav flex-column">
+
+      <li class="nav-item">
+          <a data-bs-toggle="collapse" href="#CPPIntroduction" role="button" aria-expanded="false" aria-controls="CPPIntroduction">
+            <i class="bi bi-caret-right-fill me-2"></i> Pengenalan C++
+          </a>
+          <div class="collapse show" id="CPPIntroduction">
+            <ul class="nav flex-column">
+              <li><a href="#" class="side-link" side-section="What_Is_CPP">Apa itu C++?</a></li>
+              <li><a href="#" class="side-link" side-section="CPP_Structure">Struktur Program C++</a></li>
+            </ul>
+          </div>
+      </li>
+
+      <li class="nav-item">
+        <a href="CPPSintaks.html" role="button" aria-expanded="false" aria-controls="CPPSintaks">
+          <i class="bi bi-caret-right-fill me-2"></i> Sintaks C++
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="CPPOutput.html" role="button" aria-expanded="false" aria-controls="CPPOutput">
+          <i class="bi bi-caret-right-fill me-2"></i> Output C++
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="CPPComment.html" role="button" aria-expanded="false" aria-controls="CPPComment">
+          <i class="bi bi-caret-right-fill me-2"></i> Komentar C++
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="CPPVariables.html" role="button" aria-expanded="false" aria-controls="CPPVariables">
+          <i class="bi bi-caret-right-fill me-2"></i> Variabel C++
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="CPPOutput.html" role="button" aria-expanded="false" aria-controls="CPPOutput">
+          <i class="bi bi-caret-right-fill me-2"></i> Input Pengguna C++
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Navbar Content -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="HTMLIntroduction.html" data-section="html">HTML</a></li>
+        <li><a href="index-css.html" data-section="css">CSS</a></li>
+        <li><a href="index-js.html" data-section="javascript">JavaScript</a></li>
+        <li><a href="#" class="active" data-section="cpp">CPP</a></li>
+      </ul>
+    </nav>
+    </div>
+  </nav>
+
+  <!-- Content Sections -->
+  <div class="sections">
+    <div id="What_Is_CPP" class="section active-section">
+      <h1>Selamat Datang di Tutorial C++</h1>
+      <hr class="border border-primary border-2 opacity-50">
+      <br>
+      <p class="h3">Apa itu C++?</p><br>
+      <div class="text-center mb-4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ Logo" class="img-fluid" style="max-width: 150px;">
+      </div>
+      <p class="fw-normal">
+        <span class="text-primary fw-bold">C++</span> adalah bahasa pemrograman tingkat tinggi yang sangat populer dan digunakan secara luas. 
+        Bahasa ini menawarkan fleksibilitas, kecepatan, dan kemamp
+        uan untuk pemrograman berorientasi objek maupun prosedural.
+      </p>
+
+      <br>
+
+      <h2>Bjarne Stroustrup, Pencipta C++</h2>
+      <div class="text-center mb-4">
+        <img src="https://www.chu.cam.ac.uk/wp-content/uploads/2021/12/Bjarne-Stroustrup.jpg" alt="Bjarne Stroustrup" class="img-fluid" style="max-width: 150px; border-radius: 10px;">
+        <p class="small">Bjarne Stroustrup, pencipta C++</p>
+      </div>
+      <p class="fw-normal">
+        C++ diciptakan oleh <span class="text-primary">Bjarne Stroustrup</span> pada tahun 1979. Awalnya dinamai "C with Classes" karena pengembangan dari bahasa C dengan fitur tambahan kelas (class). 
+        Pada tahun 1983, bahasa ini secara resmi dinamai C++, diambil dari operator increment (++) dalam C, yang melambangkan pengembangan lebih lanjut.
+      </p>
+
+      <br>
+
+      <h2>Sejarah dan Evolusi</h2>
+      <p class="fw-normal">
+        Standar pertama untuk C++ dirilis pada tahun 1998 (C++98), yang menetapkan fondasi utama bahasa ini. 
+        Sejak itu, banyak pembaruan seperti C++03, C++11, C++14, C++17, dan C++20 menambahkan fitur-fitur baru yang meningkatkan efisiensi, performa, dan fleksibilitasnya.
+      </p>
+
+      <br>
+
+      <h2>Mengapa Memilih C++?</h2>
+      <ul>
+        <li>
+          <strong>Fleksibilitas:</strong> Mendukung berbagai paradigma pemrograman seperti prosedural, berorientasi objek, dan generik.
+        </li>
+        <li>
+          <strong>Performa Tinggi:</strong> Sangat cocok untuk pengembangan perangkat lunak yang membutuhkan efisiensi tinggi, seperti game dan sistem operasi.
+        </li>
+        <li>
+          <strong>Komunitas Besar:</strong> Tersedia banyak sumber daya untuk pembelajaran dan pengembangan.
+        </li>
+        <li>
+          <strong>Penggunaan Luas:</strong> Digunakan di berbagai industri seperti otomotif, aerospace, dan pengembangan aplikasi desktop.
+        </li>
+      </ul>
+      <div class="text-center mt-4">
+        <a href="#CPP_Structure" class="btn btn-primary">Selanjutnya</a>
+      </div>
+    </div>
+
+
+    <div id="CPP_Structure" class="section">
+      <h1>Struktur Dasar Program C++</h1>
+      <hr class="border border-primary border-2 opacity-50">
+      <br>
+      <p class="h3">Apa itu Struktur Dasar C++?</p>
+      <p class="fw-normal">
+        Struktur dasar program <span class="text-primary fw-bold">C++</span> terdiri dari elemen-elemen penting yang membentuk kerangka kode. 
+        Setiap program C++ selalu dimulai dengan fungsi utama bernama <code>main()</code>, yang menjadi titik awal eksekusi program. 
+        Selain itu, penggunaan pustaka standar seperti <code>#include &lt;iostream&gt;</code> diperlukan untuk menjalankan operasi input/output.
+      </p>
+
+      <p class="fw-normal">
+        Dengan memahami struktur dasar ini, Anda dapat mulai menulis kode C++ dengan cara yang terorganisasi dan efisien. Berikut adalah contoh sederhana struktur program C++:
+      </p>
+
+      <!-- Box Editor -->
+      <div class="fluid-container">
+        <!-- Card -->
+        <div class="card">
+            <!-- Header -->
+            <div class="editor-header">
+                <div class="circle red"></div>
+                <div class="circle yellow"></div>
+                <div class="circle green"></div>
+                <div class="ms-3">Contoh Struktur Dasar</div>
+            </div>
+
+            <!-- Code Container -->
+            <div class="code-container">
+                <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout << "Halo, Dunia!" << endl;
+    return 0;
+}
+                </pre>
+            </div>
+
+            <!-- Button -->
+            <div class="btn-container">
+                <a href="#" class="btn-try">Coba Kode »</a>
+            </div>
+        </div>
+      </div>
+      <br>   
+      <h2>Penjelasan Elemen Kode</h2>
+      <ul>
+          <li>
+              <code>#include &lt;iostream&gt;</code>: Menyertakan pustaka untuk operasi input dan output standar.
+          </li>
+          <li>
+              <code>using namespace std;</code>: Membuat elemen dalam ruang nama <code>std</code> lebih mudah diakses.
+          </li>
+          <li>
+              <code>int main()</code>: Fungsi utama yang menjadi titik awal eksekusi program.
+          </li>
+          <li>
+              <code>cout</code>: Digunakan untuk mencetak output ke layar.
+          </li>
+          <li>
+              <code>return 0;</code>: Menandakan bahwa program selesai dijalankan dengan sukses.
+          </li>
+      </ul>
+
+      <br>
+
+      <h2>Bagaimana Ini Bekerja?</h2>
+      <p class="fw-normal">
+        Saat Anda menjalankan program, compiler akan membaca kode dari atas ke bawah. Pustaka <code>&lt;iostream&gt;</code> menyediakan fungsi untuk menampilkan teks atau menerima input. Fungsi <code>main()</code> memulai eksekusi program, dan perintah <code>cout</code> akan mencetak teks "Halo, Dunia!" ke layar.
+      </p>
+
+      <br>
+
+      <h2>Kiat untuk Pemula</h2>
+      <ul>
+          <li>Gunakan indentasi yang rapi untuk membuat kode mudah dibaca.</li>
+          <li>Pahami fungsi dari setiap elemen dalam program sebelum menambahkan fitur kompleks.</li>
+          <li>Selalu gunakan <code>return 0;</code> di akhir fungsi <code>main()</code> untuk menandakan bahwa program berjalan dengan sukses.</li>
+      </ul>
+
+    </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

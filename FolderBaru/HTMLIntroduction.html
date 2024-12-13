@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Itroduction</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="editor.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="px-3 mb-3">
+      <h5 class="d-flex align-items-center">
+        <i class="bi bi-filetype-html"></i>
+        &nbsp; Tutorial HTML
+      </h5>
+    </div>
+    
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a data-bs-toggle="collapse" href="#HTMLIntroduction" role="button" aria-expanded="false" aria-controls="HTMLIntrodcution">
+          <i class="bi bi-caret-right-fill me-2"></i> HTML Introduction
+        </a>
+        <div class="collapse show" id="HTMLIntroduction">
+          <ul class="nav flex-column">
+            <li><a href="#" class="side-link" side-section="What_Is_HTML" >What Is HTML</a></li>
+            <li><a href="#" class="side-link" side-section="HTML_Links">HTML Links</a></li>
+            <li><a href="#" class="side-link" side-section="HTML_Image">HTML Image</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="HTMLBasic.html" role="button" aria-expanded="false" aria-controls="HTMLBasic">
+          <i class="bi bi-caret-right-fill me-2"></i> HTML Basic
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="HTMLElements.html" role="button" aria-expanded="false" aria-controls="HTMLElements">
+          <i class="bi bi-caret-right-fill me-2"></i> HTML Elements
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="HTMLForms.html" role="button" aria-expanded="false" aria-controls="HTMLForms">
+          <i class="bi bi-caret-right-fill me-2"></i> HTML Forms
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Navbar Content -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="#" class="active" data-section="html">HTML</a></li>
+      <li><a href="index-css.html" data-section="css">CSS</a></li>
+      <li><a href="index-js.hmtl" data-section="javascript">JavaScript</a></li>
+      <li><a href="index-cpp.html" data-section="cpp">CPP</a></li>
+      </ul>
+    </nav>
+    </div>
+  </nav>
+
+  <!-- Content Sections -->
+  <div class="sections">
+    <div id="html" class="section active-section">
+      <h1>Selamat Datang di Tutorial HTML</h1>
+      <hr class="border border-danger border-2 opacity-50">
+      <p class="h3">Apa itu HTML?</p><br>
+      <p class="fw-normal">
+        <span class="text-danger fw-bold">HTML</span>, yang merupakan singkatan dari 
+        <em>HyperText Markup Language</em>, adalah bahasa markup standar yang digunakan untuk membuat dan menyusun halaman web. 
+        <span class="text-danger fw-bold">HTML</span> adalah inti dari setiap halaman web, memungkinkan pembuatnya untuk mendesain struktur dan konten sebuah situs yang dapat diakses melalui <em>browser</em>.
+    </p>
+    <p>Dengan Code Editor ini anda dapat mencoba Membuat HTML anda sendiri!</p>
+    
+  <!-- Box Editor -->
+  <div class="fluid-container">
+    <!-- Card -->
+    <div class="card">
+        <!-- Header -->
+        <div class="editor-header">
+            <div class="circle red"></div>
+            <div class="circle yellow"></div>
+            <div class="circle green"></div>
+            <div class="ms-3">Contoh Sederhana</div>
+        </div>
+
+        <!-- Code Container -->
+        <div class="code-container">
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </div>
+
+        <!-- Button -->
+        <div class="btn-container">
+            <a href="#" class="btn-try">Try it Yourself »</a>
+        </div>
+    </div>
+</div>
+ <br>   
+<h2>Penjelasan</h2>
+<ul>
+    <li>
+        <code>&lt;!DOCTYPE html&gt;</code>: Deklarasi ini mendefinisikan bahwa dokumen ini adalah dokumen HTML5.
+    </li>
+    <li>
+        <code>&lt;html&gt;</code>: Elemen ini adalah elemen akar (root) dari sebuah halaman HTML.
+    </li>
+    <li>
+        <code>&lt;head&gt;</code>: Elemen ini berisi informasi meta tentang halaman HTML, seperti judul dan referensi ke file CSS atau JavaScript.
+    </li>
+    <li>
+        <code>&lt;title&gt;</code>: Elemen ini menetapkan judul halaman HTML (judul ini akan ditampilkan di tab browser).
+    </li>
+    <li>
+        <code>&lt;body&gt;</code>: Elemen ini mendefinisikan isi dokumen yang akan terlihat di halaman, seperti heading, paragraf, gambar, tautan, tabel, dan elemen lainnya.
+    </li>
+    <li>
+        <code>&lt;h1&gt;</code>: Elemen ini digunakan untuk mendefinisikan heading utama (paling besar).
+    </li>
+    <li>
+        <code>&lt;p&gt;</code>: Elemen ini digunakan untuk mendefinisikan sebuah paragraf teks.
+    </li>
+</ul>
+      </div>
+    <div id="What_Is_HTML" class="section">
+      <h1>Selamat Datang di Tutorial HTML</h1>
+      <hr class="border border-danger border-2 opacity-50">
+      <p class="h3">Apa itu HTML?</p><br>
+      <p class="fw-normal">
+        <span class="text-danger fw-bold">HTML</span>, yang merupakan singkatan dari 
+        <em>HyperText Markup Language</em>, adalah bahasa markup standar yang digunakan untuk membuat dan menyusun halaman web. 
+        <span class="text-danger fw-bold">HTML</span> adalah inti dari setiap halaman web, memungkinkan pembuatnya untuk mendesain struktur dan konten sebuah situs yang dapat diakses melalui <em>browser</em>.
+    </p>
+    <p>Dengan Code Editor ini anda dapat mencoba Membuat HTML anda sendiri!</p>
+    
+  <!-- Box Editor -->
+  <div class="fluid-container">
+    <!-- Card -->
+    <div class="card">
+        <!-- Header -->
+        <div class="editor-header">
+            <div class="circle red"></div>
+            <div class="circle yellow"></div>
+            <div class="circle green"></div>
+            <div class="ms-3">Contoh Sederhana</div>
+        </div>
+
+        <!-- Code Container -->
+        <div class="code-container">
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;This is a Heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+        </div>
+
+        <!-- Button -->
+        <div class="btn-container">
+            <a href="#" class="btn-try">Try it Yourself »</a>
+        </div>
+    </div>
+</div>
+ <br>   
+<h2>Penjelasan</h2>
+<ul>
+    <li>
+        <code>&lt;!DOCTYPE html&gt;</code>: Deklarasi ini mendefinisikan bahwa dokumen ini adalah dokumen HTML5.
+    </li>
+    <li>
+        <code>&lt;html&gt;</code>: Elemen ini adalah elemen akar (root) dari sebuah halaman HTML.
+    </li>
+    <li>
+        <code>&lt;head&gt;</code>: Elemen ini berisi informasi meta tentang halaman HTML, seperti judul dan referensi ke file CSS atau JavaScript.
+    </li>
+    <li>
+        <code>&lt;title&gt;</code>: Elemen ini menetapkan judul halaman HTML (judul ini akan ditampilkan di tab browser).
+    </li>
+    <li>
+        <code>&lt;body&gt;</code>: Elemen ini mendefinisikan isi dokumen yang akan terlihat di halaman, seperti heading, paragraf, gambar, tautan, tabel, dan elemen lainnya.
+    </li>
+    <li>
+        <code>&lt;h1&gt;</code>: Elemen ini digunakan untuk mendefinisikan heading utama (paling besar).
+    </li>
+    <li>
+        <code>&lt;p&gt;</code>: Elemen ini digunakan untuk mendefinisikan sebuah paragraf teks.
+    </li>
+</ul>
+    </div>
+    <div id="HTML_Links" class="section">
+      <h1>HTML Links</h1>
+      <hr class="border border-danger border-2 opacity-50">
+      <p class="h3">Apa itu Link dalam HTML?</p><br>
+      
+      <!-- content Link -->
+      <p>
+        <span class="text-danger fw-bold">HTML Link</span> adalah elemen dalam 
+        <span class="text-danger fw-bold">HTML</span> yang digunakan untuk membuat 
+        <em>tautan (hyperlink)</em> yang menghubungkan satu halaman web dengan halaman lain, baik di dalam situs yang sama maupun ke situs lain di <em>internet</em>. 
+        Elemen ini memungkinkan pengguna untuk berpindah dari satu dokumen, sumber daya, atau lokasi tertentu ke lokasi lainnya dengan mudah.
+      </p>
+      <!--Box Syntax-->
+      <p class="h3"> HTML Link - Syntax </p>
+    <div class="fluid-container"></div>
+        <div class="card">
+          <code>
+            &lt;<span class="text-green">a</span> <span class="text-red">href</span>=<span class="text-blue">"url"</span>&gt;<span class="text-black">Link text</span>&lt;/<span class="text-green">a</span>&gt;
+          </code>
+        </div>
+          <p>
+            Tag <span class="text-danger">&lt;a&gt;</span> digunakan untuk membuat hyperlink. Atribut <span class="text-danger">href</span> menentukan URL tujuan, seperti 
+            <span class="text-danger">"url"</span>.
+          </p>
+          <br>
+          <p>Berikut Merupakan Contoh dari Codenya </p>
+          <div class="card">
+            <code>
+              &lt;<span class="text-red">a</span> <span class="text-red">href</span>=<span class="text-primary">"https://SabilCourse.com/"</span>&gt;<span class="text-black">Visit W3Schools.com!</span>&lt;/<span class="text-red">a</span>&gt;
+          </code>
+          </div>
+            <p>
+              Tag <span class="text-danger">&lt;a&gt;</span> digunakan untuk membuat hyperlink. Atribut <span class="text-danger">href</span> menentukan URL tujuan, seperti 
+              <span class="text-danger">"SabilCoure.www"</span>. Kemudian Link akan mengarahkan anda ke Website atau URL yang dituju.
+            </p>
+            <br>
+          <p> Coba buat Code Editor Anda Sendiri! </p>
+          <div class="card">
+            <div class="code-container">
+            <code>
+              &lt;<span class="text-red">a</span> <span class="text-red">href</span>=<span class="text-primary">"https://SabilCourse.com/"</span>&gt;<span class="text-white">Visit W3Schools.com!</span>&lt;/<span class="text-red">a</span>&gt;
+          </code>
+            </div>
+            <div class="btn-container">
+              <a href="#" class="btn-try">Try it Yourself »</a>
+            </div>
+          </div>
+    </div>
+  <div id="HTML_Image" class="section">
+      <h1>HTML Image</h1>
+      <hr class="border border-danger border-2 opacity-50">
+      <p class="h3">Apa Itu HTML Image?</p>
+      <br>
+      <p>
+        <span class="text-danger fw-bold">HTML Image</span> adalah elemen dalam 
+        <span class="fst-italic">HTML</span> yang digunakan untuk menampilkan gambar di halaman web. 
+        Elemen ini memungkinkan pengembang web untuk menambahkan berbagai jenis gambar, seperti 
+        foto, ilustrasi, grafik, atau logo, sehingga membuat halaman web menjadi lebih menarik dan informatif.
+    </p>
+    <p>
+        <span class="fst-italic">HTML Image</span> didefinisikan menggunakan elemen 
+        <code>&lt;img&gt;</code> (<span class="fst-italic">image tag</span>), 
+        yang merupakan elemen <span class="fst-italic">self-closing</span> 
+        (tidak memerlukan tag penutup).
+    </p>
+    <br>
+    <p> Contoh dari Image di HTML </p>
+    <div class="fluid-container">
+      <div class="card-image">
+        <img src="Pemandangan.jpg" class="rounded float-start" alt="Pemandangan" width="200" height="200">
+        <img src="Fotokucing.webp" class="rounded float-end" alt="FotoKucing" width="200" height="200">
+      </div>
+    </div>
+    <br>
+    <p>Gambar diatas Merupakan contoh dari Penggunaan dan pengaturan <span class="text-danger">&lt;image&gt;</span></p>
+    <br>
+    <p class="h3"> HTML Image - Syntax </p>
+    <div class="fluid-container">
+      <!-- Card -->
+      <div class="card">
+          <!-- Header -->
+          <div class="editor-header">
+              <div class="circle red"></div>
+              <div class="circle yellow"></div>
+              <div class="circle green"></div>
+              <div class="ms-3">Contoh Syntax Image</div>
+          </div>
+  
+          <!-- Code Container -->
+          <div class="code-container">
+            <pre>
+&lt;img src="Fotokucing.webp"  alt="FotoKucing" &gt;
+&lt;img src="Pemandangan.jpg"  alt="Pemandangan"&gt;
+&lt;img src="Fotokucing.webp"  alt="FotoKucing" width="200" height="200"&gt;
+            </pre>
+          </div>
+  
+          <!-- Button -->
+          <div class="btn-container">
+              <a href="#" class="btn-try">Try it Yourself »</a>
+          </div>
+      </div>
+    </div>
+    <p>
+      Kode di atas menggunakan elemen <code>&lt;img&gt;</code>, yang merupakan elemen <span class="fst-italic">self-closing</span> 
+      dalam <span class="fst-italic">HTML</span>. Elemen ini digunakan untuk menampilkan gambar pada halaman web. 
+      Pada atribut <span class="text-danger">src</span>, ditentukan sumber gambar yang ingin ditampilkan, seperti 
+      <span class="fst-italic">Fotokucing.webp</span> atau <span class="fst-italic">Pemandangan.jpg</span>.
+    </p>
+    <p>
+      Atribut <span class="text-danger">alt</span> memberikan deskripsi alternatif untuk gambar jika gambar gagal dimuat. 
+      Selain itu, atribut <span class="text-danger">width</span> dan <span class="text-danger">height</span> digunakan untuk 
+      menentukan ukuran gambar dalam piksel, contohnya <span class="text-danger">200</span> x <span class="text-danger">200</span>.
+    </p>
+  
+  </div>
+    
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C++ Introduction</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="px-3 mb-3">
+      <h5 class="d-flex align-items-center">
+        <i class="bi bi-bootstrap me-2"></i>
+        Collapsible
+      </h5>
+    </div>
+    
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#homeMenu" role="button" aria-expanded="false" aria-controls="homeMenu">
+          <i class="bi bi-caret-right-fill me-2"></i> CSS Introduction
+        </a>
+        <div class="collapse" id="homeMenu">
+          <ul class="nav flex-column">
+            <li><a href="#" class="nav-link">Learn</a></li>
+            <li><a href="#" class="nav-link">Test</a></li>
+            <li><a href="#" class="nav-link">Discussion</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#dashboardMenu" role="button" aria-expanded="false" aria-controls="dashboardMenu">
+          <i class="bi bi-caret-right-fill me-2"></i> CSS Basic
+        </a>
+        <div class="collapse" id="dashboardMenu">
+          <ul class="nav flex-column">
+            <li><a href="#" class="nav-link">Learn</a></li>
+            <li><a href="#" class="nav-link">Test</a></li>
+            <li><a href="#" class="nav-link">Discussion</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#ordersMenu" role="button" aria-expanded="false" aria-controls="ordersMenu">
+          <i class="bi bi-caret-right-fill me-2"></i> CSS Elements
+        </a>
+        <div class="collapse" id="ordersMenu">
+          <ul class="nav flex-column">
+            <li><a href="#" class="nav-link">Learn</a></li>
+            <li><a href="#" class="nav-link">Test</a></li>
+            <li><a href="#" class="nav-link">Discussion</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="collapse" href="#accountMenu" role="button" aria-expanded="false" aria-controls="accountMenu">
+          <i class="bi bi-caret-right-fill me-2"></i> CSS Attributes
+        </a>
+        <div class="collapse" id="accountMenu">
+          <ul class="nav flex-column">
+            <li><a href="#" class="nav-link">Learn</a></li>
+            <li><a href="#" class="nav-link">Test</a></li>
+            <li><a href="#" class="nav-link">Discussion</a></li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="PageHTML.html" data-section="html">HTML</a></li>
+      <li><a href="#" class="active" data-section="css">CSS</a></li>
+      <li><a href="index-js.html" data-section="javascript">JavaScript</a></li>
+      <li><a href="index-cpp.html" data-section="cpp">CPP</a></li>
+    </ul>
+  </nav>
+  </div>
+</nav>
+
+  <div class="sections">
+    <div id="css" class="section active-section">
+      <h1>Selamat Datang di Tutorial CSS</h1>
+      <br>
+      <h2>1. APA ITU CSS?</h2>
+        <p>CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk 
+        mengatur tampilan dan format elemen pada halaman web. Dengan CSS, 
+        kita dapat mengubah warna, tata letak, font, dan elemen visual lainnya 
+        pada sebuah website. CSS bekerja bersama HTML untuk memberikan desain yang 
+        menarik dan fungsional.</p>
+        <img src="css.jpg" alt="ERROR" title="CSS3">
+        <br><br>
+       <h2>2. Fungsi CSS</h2>
+        <p>CSS digunakan untuk:</p>
+      <p><ul>
+          <li>Mengatur Tata Letak: Mengatur posisi elemen seperti header, sidebar, footer, dll.</li>
+          <li> Memberikan Gaya Visual: Mengubah warna, jenis font, ukuran teks, dan elemen grafis lainnya.</li>
+          <li>Meningkatkan Konsistensi: Dengan satu file CSS, tampilan banyak halaman dapat dikelola dengan mudah.</li>
+          <li>Memisahkan Konten dari Desain: Memudahkan pengelolaan kode karena HTML hanya berisi konten, sedangkan desain dikelola dengan CSS.</li>
+          </ul></p>
+        <img src="sou.jpg" alt="ERROR" title="CSS3"
+        <br> <br>
+        
+        <H2>3. Cara Penulisan CSS</H2>
+        <p>
+          Ada tiga cara untuk menambahkan CSS ke dalam proyek web:
+        </p>
+        <ol>
+          <li>Inline CSS
+            <ul>
+              <li>
+              Ditulis langsung dalam atribut elemen HTML.<br>
+              <img src="1.jpg" alt="ERROR">
+            </li>
+          </ul>
+          </li>
+          <li>Internal CSS
+            <ul>
+              <li>
+                <p> dalam tag < style > di bagian < head > dokumen HTML. <br>
+              <img src="2.jpg" alt="ERROR">
+            </li>
+          </ul>
+          </li>
+          <li>External CSS
+            <ul>
+              <li>Disimpan dalam file terpisah dengan ekstensi .css. <br>
+              <img src="3.jpg" alt="ERROR">
+            </li>
+          </ul>
+          </li>
+        </ol>
+    <br><br>
+
+    <h2>4. Struktur Dasar CSS</h2>
+    <p>Contoh penulisan struktur di CSS</p>
+    <img src="c1.jpg" alt="error">
+    <Ul>
+      <Li>Selector: Elemen HTML yang ingin diberikan gaya (contoh: p, h1, div).</Li>
+      <Li>Property: Properti yang ingin diatur (contoh: color, font-size).</Li>
+      <Li>Value: Nilai dari properti tersebut (contoh: blue, 16px).</Li>
+    </Ul>
+<br><br>
+
+<h2>5. Jenis Selector pada CSS</h2>
+<ul>
+  <li>Universal Selector (*): Menerapkan gaya ke semua elemen
+    <img src="ce1.jpg" alt="error">
+  </li>
+  <li>Type Selector: Menerapkan gaya ke elemen tertentu
+    <img src="ce2.jpg" alt="error">
+  </li>
+  <li>Class Selector (.): Menerapkan gaya ke elemen dengan atribut class
+    <img src="ce3.jpg" alt="error">
+  </li>
+  <li>ID Selector (#): Menerapkan gaya ke elemen dengan atribut id.
+    <img src="ce4.jpg" alt="error">
+  </li>
+</ul>
+<br><br>
+
+<h2>6. Properti CSS yang Sering Digunakan</h2>
+<ol>
+  <li>Teks
+    <ul>
+      <li>color: Mengatur warna teks.</li>
+      <li>font-size: Mengatur ukuran font.</li>
+      <li>text-align: Mengatur perataan teks (left, center, right, justify)</li>
+    </ul>
+  </li>
+  <li>Tata Letak
+    <ul>
+      <li>margin: Memberikan jarak di luar elemen.</li>
+      <li>padding: Memberikan jarak di dalam elemen.</li>
+      <li>border: Menambahkan garis tepi pada elemen.</li>
+    </ul>
+  </li>
+  <li>Warna dan Latar Belakang
+    <ul>
+      <li>background-color: Memberikan warna latar belakang.</li>
+      <li>background-image: Memberikan gambar sebagai latar belakang.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2>Contoh code lengkap:</h2>
+<h3>HTML</h3>
+<img src="cs1.jpg" alt="error">
+<h3>CSS (styles.css)</h3>
+<img src="cs2.jpg" alt="error">
+    </div>
+    <div id="css" class="section">
+      <h1>APA ITU CSS? </h1>
+      <p>sdadasdasda</p>
+    </div>
+    <div id="javascript" class="section">
+      <h1>JavaScript</h1>
+      <p>This is the JavaScript section.</p>
+    </div>
+    <div id="cpp" class="section">
+      <h1>CPP</h1>
+      <p>This is the CPP section.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

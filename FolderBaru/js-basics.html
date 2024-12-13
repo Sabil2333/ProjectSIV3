@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript | Basics</title>
+
+    <link href="./output.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <!-- component -->
+    <div class="container flex flex-col mx-auto bg-white">
+        <aside class="group/sidebar flex flex-col shrink-0 lg:w-[300px] w-[250px] transition-all duration-300 ease-in-out m-0 fixed z-40 inset-y-0 left-0 bg-white border-r border-r-dashed border-r-neutral-200 sidenav fixed-start loopple-fixed-start" id="sidenav-main">
+        <div class="hidden border-b border-dashed lg:block dark:border-neutral-700/70 border-neutral-200"></div>
+
+        <div class="flex items-center justify-between px-8 py-5">
+            <div class="flex items-center mr-5">
+                <div class="mr-2 ">
+                    <a href="./index-js.html" class="text-[1.5rem] text-secondary-inverse font-bold text-stone-700">
+                        Learn Javascript
+                    </a>                
+                </div>
+            </div>
+        </div>
+        <div class="hidden border-b border-dashed lg:block dark:border-neutral-700/70 border-neutral-200"></div>
+        <div class="relative pl-3 my-5">
+            <div class="flex flex-col w-full font-medium">
+            <!-- menu item -->
+            <div>
+                <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                <a href="./js-basics.html" class="flex items-center flex-grow text-[1.15rem] text-yellow-400">JS Basics</a>
+                </span>
+            </div>
+            <!-- menu item -->
+            <div>
+                <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                <a href="./js-functions.html" class="hover:text-stone-200 flex items-center flex-grow text-[1.15rem]  text-stone-500">JS Functions</a>
+                </span>
+            </div>
+            <!-- menu item -->
+            <div>
+                <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                <a href="./js-classes.html" class="hover:text-stone-200 flex items-center flex-grow text-[1.15rem]  text-stone-500">JS Classes</a>
+                </span>
+            </div>
+
+            </div>
+        </div>
+        </aside>        
+        <div class="flex flex-wrap ml-8 my-8">
+            <div class="w-full max-w-full  ml-80">
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        JavaScript Syntax
+                    </p>
+                    <p class="my-4 text-m">
+                        JavaScript syntax is the set of rules, how JavaScript programs are constructed:
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+// How to create variables:
+var x;
+let y;
+
+// How to use variables:
+x = 5;
+y = 6;
+let z = x + y;
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        JavaScript Literals
+                    </p>
+                    <p class="my-4 text-m">
+                        The two most important syntax rules for fixed values are:
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+// Numbers are written with or without decimals:
+10.50
+1001
+
+// Strings are text, written within double or single quotes:
+"John Doe"
+'John Doe'
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        JavaScript Variables
+                    </p>
+                    <p class="my-4 text-m">
+                        In a programming language, variables are used to store data values.
+                        <br>
+                        JavaScript uses the keywords var, let and const to declare variables.
+                        <br>
+                        An equal sign is used to assign values to variables.
+                        <br>
+                        In this example, x is defined as a variable. Then, x is assigned (given) the value 6:
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+let x;
+x = 6; 
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        JavaScript Operators
+                    </p>
+                    <p class="my-4 text-m">
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+// JavaScript uses arithmetic operators ( + - * / ) to compute values: 
+(5 + 6) * 10
+
+// JavaScript uses an assignment operator ( = ) to assign values to variables: 
+let x, y;
+x = 5;
+y = 6; 
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        JavaScript Syntax
+                    </p>
+                    <p class="my-4 text-m">
+                        JavaScript syntax is the set of rules, how JavaScript programs are constructed:
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+// How to create variables:
+var x;
+let y;
+
+// How to use variables:
+x = 5;
+y = 6;
+let z = x + y;
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        JavaScript Expressions
+                    </p>
+                    <p class="my-4 text-m">
+                        An expression is a combination of values, variables, and operators, which computes to a value.
+                        <br>
+                        The computation is called an evaluation.
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+// For example, 5 * 10 evaluates to 50:
+5 * 10 
+
+// Expressions can also contain variable values:
+x * 10 
+
+// The values can be of various types, such as numbers and strings.
+// For example, "John" + " " + "Doe", evaluates to "John Doe":
+"John" + " " + "Doe" 
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        JavaScript is Case Sensitive
+                    </p>
+                    <p class="my-4 text-m">
+                        All JavaScript identifiers are case sensitive. 
+                        <br>
+                        The variables lastName and lastname, are two different variables:
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+let lastname, lastName;
+lastName = "Doe";
+lastname = "Peterson";
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        JavaScript Keywords
+                    </p>
+                    <p class="my-4 text-m">
+                        JavaScript keywords are used to identify actions to be performed.
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+// The let keyword tells the browser to create variables:
+let x, y;
+x = 5 + 6;
+y = x * 10;
+
+// The var keyword also tells the browser to create variables:
+var x, y;
+x = 5 + 6;
+y = x * 10;
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html>

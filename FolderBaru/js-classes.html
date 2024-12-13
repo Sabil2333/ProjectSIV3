@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript | Classes</title>
+
+    <link href="./output.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <!-- component -->
+    <div class="container flex flex-col mx-auto bg-white">
+        <aside class="group/sidebar flex flex-col shrink-0 lg:w-[300px] w-[250px] transition-all duration-300 ease-in-out m-0 fixed z-40 inset-y-0 left-0 bg-white border-r border-r-dashed border-r-neutral-200 sidenav fixed-start loopple-fixed-start" id="sidenav-main">
+        <div class="hidden border-b border-dashed lg:block dark:border-neutral-700/70 border-neutral-200"></div>
+
+        <div class="flex items-center justify-between px-8 py-5">
+            <div class="flex items-center mr-5">
+                <div class="mr-2 ">
+                    <a href="./index-js.html" class="text-[1.5rem] text-secondary-inverse font-bold text-stone-700">
+                        Learn Javascript
+                    </a>                
+                </div>
+            </div>
+        </div>
+        <div class="hidden border-b border-dashed lg:block dark:border-neutral-700/70 border-neutral-200"></div>
+        <div class="relative pl-3 my-5">
+            <div class="flex flex-col w-full font-medium">
+            <!-- menu item -->
+            <div>
+                <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                <a href="./js-basics.html" class="hover:text-stone-200 flex items-center flex-grow text-[1.15rem] text-stone-500">JS Basics</a>
+                </span>
+            </div>
+            <!-- menu item -->
+            <div>
+                <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                <a href="./js-functions.html" class="hover:text-stone-200 flex items-center flex-grow text-[1.15rem]  text-stone-500">JS Functions</a>
+                </span>
+            </div>
+            <!-- menu item -->
+            <div>
+                <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                <a href="./js-classes.html" class=" flex items-center flex-grow text-[1.15rem]  text-yellow-400">JS Classes</a>
+                </span>
+            </div>
+
+            </div>
+        </div>
+        </aside>        
+        <div class="flex flex-wrap ml-8 my-9">
+            <div class="w-full max-w-full ml-80">
+
+                <h3 class="text-5xl my-8">JavaScript Classes</h3>
+                <p class="my-4 text-m">
+                    ECMAScript 2015, also known as ES6, introduced JavaScript Classes.
+                    <br>
+                    JavaScript Classes are templates for JavaScript Objects.
+                </p>
+                <div class="h-[1px] bg-stone-300 my-4"></div>
+
+                <!---->
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        JavaScript Class Syntax
+                    </p>
+                    <p class="my-4 text-m">
+                        Use the keyword class to create a class.                       
+                        <br>
+                        Always add a method named constructor():
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+class ClassName {
+    constructor() { ... }
+}
+
+class Car {
+constructor(name, year) {
+    this.name = name;
+    this.year = year;
+    }
+}
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+                <!---->
+                <!---->
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        Using a Class
+                    </p>
+                    <p class="my-4 text-m">
+                        When you have a class, you can use the class to create objects:
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+const myCar1 = new Car("Ford", 2014);
+const myCar2 = new Car("Audi", 2019);
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+                <!---->
+                <!---->
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        Class Methods
+                    </p>
+                    <p class="my-4 text-m">
+                        Class methods are created with the same syntax as object methods.
+                        <br>
+                        Use the keyword class to create a class.
+                        <br>
+                        Always add a constructor() method.
+                        <br>
+                        Then add any number of methods.
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+class ClassName {
+    constructor() { ... }
+    method_1() { ... }
+    method_2() { ... }
+    method_3() { ... }
+}
+
+class Car {
+    constructor(name, year) {
+      this.name = name;
+      this.year = year;
+    }
+    age() {
+      const date = new Date();
+      return date.getFullYear() - this.year;
+    }
+}
+  
+const myCar = new Car("Ford", 2014);
+document.getElementById("demo").innerHTML =
+"My car is " + myCar.age() + " years old.";
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+                <!---->
+                <!---->
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        Class Inheritance
+                    </p>
+                    <p class="my-4 text-m">
+                        To create a class inheritance, use the extends keyword.
+                        <br>
+                        A class created with a class inheritance inherits all the methods from another class:
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+// Create a class named "Model" which will inherit the methods from the "Car" class:
+class Car {
+constructor(brand) {
+    this.carname = brand;
+    }
+present() {
+    return 'I have a ' + this.carname;
+    }
+}
+
+class Model extends Car {
+    constructor(brand, mod) {
+        super(brand);
+        this.model = mod;
+    }
+    show() {
+        return this.present() + ', it is a ' + this.model;
+    }
+}
+
+let myCar = new Model("Ford", "Mustang");
+document.getElementById("demo").innerHTML = myCar.show();
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+                <!---->
+                
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html>

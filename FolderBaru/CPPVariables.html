@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Itroduction</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="editor.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="px-3 mb-3">
+      <h5 class="d-flex align-items-center">
+        <i class="bi bi-code-slash"></i>
+        &nbsp; Tutorial C++
+      </h5>
+    </div>
+    
+    <ul class="nav flex-column">
+
+      <li class="nav-item">
+        <a href="CPPIntroduction.html" role="button" aria-expanded="false" aria-controls="CPPIntroduction">
+            <i class="bi bi-caret-right-fill me-2"></i> Pengenalan C++
+          </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="CPPSintaks.html" role="button" aria-expanded="false" aria-controls="CPPSintaks">
+          <i class="bi bi-caret-right-fill me-2"></i> Sintaks C++
+        </a>
+      </li>
+
+
+      
+      <li class="nav-item">
+        <a href="CPPOutput.html" role="button" aria-expanded="false" aria-controls="CPPOutput">
+          <i class="bi bi-caret-right-fill me-2"></i> Output C++
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="CPPComment.html" role="button" aria-expanded="false" aria-controls="CPPComment">
+          <i class="bi bi-caret-right-fill me-2"></i> Komentar C++
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a data-bs-toggle="collapse" href="#VariablesCPP" role="button" aria-expanded="false" aria-controls="VariablesCPP">
+          <i class="bi bi-caret-right-fill me-2"></i> Variabel C++
+        </a>
+        <div class="collapse show" id="VariablesCPP">
+          <ul class="nav flex-column">
+            <li><a href="#" class="side-link" side-section="DeklarasiVariabelCPP">Deklarasi Variabel</a></li>
+            <li><a href="#" class="side-link" side-section="VariabelGandaCPP">Variabel Ganda</a></li>
+            <li><a href="#" class="side-link" side-section="IdentifierCPP">Identifier</a></li>
+            <li><a href="#" class="side-link" side-section="KonstantaCPP">Konstanta</a></li>
+            <li><a href="#" class="side-link" side-section="ContohNyataCPP">Contoh Kehidupan Nyata</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a href="CPPOutput.html" role="button" aria-expanded="false" aria-controls="CPPOutput">
+          <i class="bi bi-caret-right-fill me-2"></i> Input Pengguna C++
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  <!-- Navbar Content -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="#" data-section="html">HTML</a></li>
+        <li><a href="#" data-section="css">CSS</a></li>
+        <li><a href="#" data-section="javascript">JavaScript</a></li>
+        <li><a href="#" class="active" data-section="cpp">CPP</a></li>
+      </ul>
+    </nav>
+    </div>
+  </nav>
+
+  <div class="sections">
+    <div id="DeklarasiVariabelCPP" class="section active-section">
+      <h1>Deklarasi Variabel dalam C++</h1>
+      <hr class="border border-primary border-2 opacity-50">
+      <br>
+      <p class="h3">Apa itu Variabel dalam C++?</p>
+      <p class="fw-normal">
+        Variabel dalam <span class="text-primary fw-bold">C++</span> adalah wadah yang digunakan untuk menyimpan nilai data. 
+        Setiap variabel memiliki tipe data tertentu yang menentukan jenis nilai yang dapat disimpan, seperti bilangan bulat, angka desimal, teks, atau boolean.
+      </p><br>
+
+      <h2>Cara Mendeklarasikan Variabel</h2>
+      <p class="fw-normal">
+        Untuk mendeklarasikan variabel, Anda perlu menentukan tipe data dan nama variabel. Anda juga dapat menginisialisasi variabel saat deklarasi:
+      </p>
+      <div class="fluid-container">
+        <div class="card">
+            <div class="editor-header">
+                <div class="circle red"></div>
+                <div class="circle yellow"></div>
+                <div class="circle green"></div>
+                <div class="ms-3">Contoh Deklarasi Variabel</div>
+            </div>
+
+            <div class="code-container">
+                <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int myNum = 15; // Deklarasi dan inisialisasi
+    cout << myNum;
+    return 0;
+}
+                </pre>
+            </div>
+
+            <div class="btn-container">
+                <a href="#" class="btn-try">Coba Program »</a>
+            </div>
+        </div>
+      </div>
+
+      <br>
+
+      <h2>Mendeklarasikan Tanpa Inisialisasi</h2>
+      <p class="fw-normal">
+        Anda juga dapat mendeklarasikan variabel tanpa langsung memberikan nilai. Nilai dapat diberikan nanti:
+      </p>
+      <div class="fluid-container">
+        <div class="card">
+            <div class="code-container">
+                <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int myNum;
+    myNum = 15; // Memberikan nilai setelah deklarasi
+    cout << myNum;
+    return 0;
+}
+                </pre>
+            </div>
+        </div>
+      </div>
+
+      <br>
+
+      <h2>Mengubah Nilai Variabel</h2>
+      <p class="fw-normal">
+        Anda dapat mengubah nilai variabel yang telah dideklarasikan sebelumnya:
+      </p>
+      <div class="fluid-container">
+        <div class="card">
+            <div class="code-container">
+                <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int myNum = 15; // Nilai awal
+    myNum = 10;    // Mengubah nilai
+    cout << myNum; // Output: 10
+    return 0;
+}
+                </pre>
+            </div>
+        </div>
+      </div>
+
+      <br>
+
+      <h2>Tipe Data Lain</h2>
+      <p class="fw-normal">
+        Berikut adalah contoh tipe data lain yang dapat digunakan dalam variabel:
+      </p>
+      <div class="fluid-container">
+        <div class="card">
+            <div class="code-container">
+                <pre>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main() {
+    int myNum = 5;          // Bilangan bulat
+    double myFloatNum = 5.99; // Bilangan desimal
+    char myLetter = 'D';    // Karakter
+    string myText = "Hello"; // Teks
+    bool myBoolean = true;  // Boolean
+
+    cout << myText;
+    return 0;
+}
+                </pre>
+            </div>
+        </div>
+      </div>
+
+      <br>
+
+      <h2>Menampilkan Variabel</h2>
+      <p class="fw-normal">
+        Anda dapat menampilkan variabel menggunakan <code>cout</code>:
+      </p>
+      <div class="fluid-container">
+        <div class="card">
+            <div class="code-container">
+                <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int myAge = 25;
+    cout << "Saya berusia " << myAge << " tahun.";
+    return 0;
+}
+                </pre>
+            </div>
+        </div>
+      </div>
+
+      <br>
+
+      <h2>Menjumlahkan Variabel</h2>
+      <p class="fw-normal">
+        Anda juga dapat melakukan operasi aritmatika dengan variabel:
+      </p>
+      <div class="fluid-container">
+        <div class="card">
+            <div class="code-container">
+                <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int x = 5;
+    int y = 6;
+    int sum = x + y;
+    cout << sum; // Output: 11
+    return 0;
+}
+                </pre>
+            </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-primary">Selanjutnya</a>
+      </div>
+    </div>
+
+    <div id="VariabelGandaCPP" class="section active-section">
+      <h1>Variabel Ganda dalam C++</h1>
+      <hr class="border border-primary border-2 opacity-50">
+      <br>
+      <p class="h3">Deklarasi Variabel Ganda</p>
+      <p class="fw-normal">
+        Dalam <span class="text-primary fw-bold">C++</span>, Anda dapat mendeklarasikan beberapa variabel dengan tipe data yang sama dalam satu baris. Ini memungkinkan kode Anda menjadi lebih singkat dan terorganisir.
+      </p><br>
+
+      <h2>Contoh Deklarasi Variabel Ganda</h2>
+      <p class="fw-normal">
+        Anda dapat mendeklarasikan variabel tanpa inisialisasi atau langsung memberikan nilai:
+      </p>
+      <div class="fluid-container">
+        <div class="card">
+            <div class="editor-header">
+                <div class="circle red"></div>
+                <div class="circle yellow"></div>
+                <div class="circle green"></div>
+                <div class="ms-3">Contoh Deklarasi Variabel Ganda</div>
+            </div>
+            <div class="code-container">
+                <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  int a, b, c; // Deklarasi tiga variabel
+  a = 5;
+  b = 10;
+  c = 15;
+  cout << a << " " << b << " " << c;
+  return 0;
+}
+                </pre>
+            </div>
+            <div class="btn-container">
+                <a href="#" class="btn-try">Coba Program »</a>
+            </div>
+        </div>
+      </div>
+
+      <br>
+
+      <h2>Inisialisasi dalam Deklarasi</h2>
+      <p class="fw-normal">
+        Anda juga dapat langsung menginisialisasi variabel saat deklarasi:
+      </p>
+      <div class="fluid-container">
+        <div class="card">
+            <div class="code-container">
+                <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  int x = 1, y = 2, z = 3; // Deklarasi dengan inisialisasi
+  cout << x << " " << y << " " << z;
+  return 0;
+}
+                </pre>
+            </div>
+        </div>
+      </div>
+
+      <br>
+
+      <h2>Perhatian saat Menginisialisasi</h2>
+      <p class="fw-normal">
+        Jika hanya satu variabel yang diinisialisasi dalam deklarasi variabel ganda, variabel lainnya tidak akan memiliki nilai awal dan akan berisi nilai yang tidak terdefinisi:
+      </p>
+      <div class="fluid-container">
+        <div class="card">
+            <div class="code-container">
+                <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+  int p = 5, q, r; // Hanya p yang diinisialisasi
+  cout << p << " " << q << " " << r; // q dan r tidak terdefinisi
+  return 0;
+}
+                </pre>
+            </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#" class="btn btn-primary">Selanjutnya</a>
+      </div>
+    </div>
+
+      <div id="IdentifierCPP" class="section active-section">
+        <h1>Identifier dalam C++</h1>
+        <hr class="border border-primary border-2 opacity-50">
+        <br>
+        <p class="h3">Apa itu Identifier?</p>
+        <p class="fw-normal">
+          <span class="text-primary fw-bold">Identifier</span> dalam C++ adalah nama unik yang digunakan untuk mengidentifikasi variabel, fungsi, array, atau entitas lainnya dalam program. Identifier dapat berupa nama pendek seperti <code>x</code> dan <code>y</code>, atau nama yang lebih deskriptif seperti <code>umur</code>, <code>jumlahTotal</code>, atau <code>volumeTotal</code>.
+        </p><br>
+  
+        <h2>Aturan Penamaan Identifier</h2>
+        <ul>
+          <li><strong>Karakter yang Diizinkan:</strong> Identifier dapat mengandung huruf (A-Z dan a-z), angka (0-9), dan garis bawah (<code>_</code>).</li>
+          <li><strong>Karakter Awal:</strong> Harus dimulai dengan huruf atau garis bawah (<code>_</code>); tidak boleh dimulai dengan angka.</li>
+          <li><strong>Case-Sensitive:</strong> C++ membedakan antara huruf besar dan kecil, sehingga <code>Variabel</code> dan <code>variabel</code> dianggap berbeda.</li>
+          <li><strong>Tanpa Spasi atau Karakter Khusus:</strong> Tidak boleh mengandung spasi atau karakter khusus seperti <code>!</code>, <code>#</code>, atau <code>%</code>.</li>
+          <li><strong>Bukan Kata Kunci:</strong> Tidak boleh menggunakan kata kunci yang sudah didefinisikan dalam C++, seperti <code>int</code>, <code>float</code>, atau <code>return</code>.</li>
+        </ul>
+
+        <br>
+  
+        <h2>Contoh Identifier yang Valid</h2>
+        <div class="fluid-container">
+          <div class="card">
+              <div class="editor-header">
+                  <div class="circle red"></div>
+                  <div class="circle yellow"></div>
+                  <div class="circle green"></div>
+                  <div class="ms-3">Contoh Identifier yang Valid</div>
+              </div>
+              <div class="code-container">
+                  <pre>
+int umur;
+float _tinggiBadan;
+char namaDepan;
+                  </pre>
+              </div>
+          </div>
+        </div>
+  
+        <br>
+  
+        <h2>Contoh Identifier yang Tidak Valid</h2>
+        <div class="fluid-container">
+          <div class="card">
+              <div class="editor-header">
+                  <div class="circle red"></div>
+                  <div class="circle yellow"></div>
+                  <div class="circle green"></div>
+                  <div class="ms-3">Contoh Identifier yang Tidak Valid</div>
+              </div>
+              <div class="code-container">
+                  <pre>
+int 2angka;      // Tidak valid: dimulai dengan angka
+float tinggi badan; // Tidak valid: mengandung spasi
+char nama#;      // Tidak valid: mengandung karakter khusus #
+                  </pre>
+              </div>
+          </div>
+        </div>
+
+        <br>
+
+        <h2>Pentingnya Identifier yang Deskriptif</h2>
+        <p class="fw-normal">
+          Menggunakan nama identifier yang deskriptif sangat dianjurkan untuk meningkatkan keterbacaan dan pemeliharaan kode. Pilih nama yang merepresentasikan tujuan variabel atau fungsi dengan jelas.
+        </p>
+  
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-primary">Selanjutnya</a>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div id="ContohNyataCPP" class="section active-section">
+        <h1>Contoh Nyata Penggunaan Variabel dalam C++</h1>
+        <hr class="border border-primary border-2 opacity-50">
+        <br>
+        <p class="h3">Penerapan Variabel dalam Kehidupan Nyata</p>
+        <p class="fw-normal">
+          Dalam <span class="text-primary fw-bold">C++</span>, variabel sering digunakan untuk menyimpan nilai yang relevan dengan kasus dunia nyata. 
+          Contohnya meliputi perhitungan gaji karyawan, pengukuran fisik, atau menyimpan data pengguna dalam aplikasi.
+        </p>
+        <br>
+
+        <h2>Contoh: Menghitung Luas Persegi Panjang</h2>
+        <p class="fw-normal">
+          Program berikut menghitung luas persegi panjang menggunakan variabel untuk panjang dan lebar:
+        </p>
+        <div class="fluid-container">
+          <div class="card">
+              <div class="editor-header">
+                  <div class="circle red"></div>
+                  <div class="circle yellow"></div>
+                  <div class="circle green"></div>
+                  <div class="ms-3">Contoh Menghitung Luas</div>
+              </div>
+              <div class="code-container">
+                  <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int panjang = 10; // Panjang persegi panjang
+    int lebar = 5;    // Lebar persegi panjang
+    int luas = panjang * lebar; // Menghitung luas
+
+    cout << "Luas persegi panjang adalah: " << luas;
+    return 0;
+}
+                  </pre>
+              </div>
+              <div class="btn-container">
+                  <a href="#" class="btn-try">Coba Program »</a>
+              </div>
+          </div>
+        </div>
+
+        <br>
+
+        <h2>Contoh: Menyimpan Data Pengguna</h2>
+        <p class="fw-normal">
+          Berikut adalah program yang menggunakan variabel untuk menyimpan dan menampilkan informasi pengguna:
+        </p>
+        <div class="fluid-container">
+          <div class="card">
+              <div class="editor-header">
+                  <div class="circle red"></div>
+                  <div class="circle yellow"></div>
+                  <div class="circle green"></div>
+                  <div class="ms-3">Contoh Data Pengguna</div>
+              </div>
+              <div class="code-container">
+                  <pre>
+#include &lt;iostream&gt;
+#include &lt;string&gt;
+using namespace std;
+
+int main() {
+    string nama = "John"; // Nama pengguna
+    int umur = 30;         // Umur pengguna
+
+    cout << "Nama: " << nama << endl;
+    cout << "Umur: " << umur << " tahun.";
+    return 0;
+}
+                  </pre>
+              </div>
+              <div class="btn-container">
+                  <a href="#" class="btn-try">Coba Program »</a>
+              </div>
+          </div>
+        </div>
+
+        <br>
+
+        <h2>Contoh: Penggunaan Variabel Boolean</h2>
+        <p class="fw-normal">
+          Program berikut menunjukkan penggunaan variabel boolean untuk memeriksa kondisi tertentu:
+        </p>
+        <div class="fluid-container">
+          <div class="card">
+              <div class="code-container">
+                  <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    bool isSunny = true; // Cuaca cerah
+
+    if (isSunny) {
+        cout << "Hari ini cerah!";
+    } else {
+        cout << "Hari ini mendung.";
+    }
+    return 0;
+}
+                  </pre>
+              </div>
+          </div>
+        </div>
+
+        <br>
+
+        <h2>Kesimpulan</h2>
+        <p class="fw-normal">
+          Variabel dalam C++ sangat fleksibel dan dapat digunakan untuk berbagai skenario dunia nyata. 
+          Dengan memahami tipe data dan cara penggunaannya, Anda dapat membuat program yang lebih dinamis dan bermanfaat.
+        </p>
+
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-primary">Selanjutnya</a>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+        <div id="KonstantaCPP" class="section active-section">
+          <h1>Konstanta dalam C++</h1>
+          <hr class="border border-primary border-2 opacity-50">
+          <br>
+          <p class="h3">Apa itu Konstanta?</p>
+          <p class="fw-normal">
+            Konstanta dalam <span class="text-primary fw-bold">C++</span> adalah variabel yang nilainya tidak dapat diubah setelah dideklarasikan. 
+            Untuk mendeklarasikan konstanta, gunakan kata kunci <code>const</code> diikuti oleh tipe data dan nilai yang ingin ditetapkan.
+          </p>
+          <br>
+    
+          <h2>Cara Mendeklarasikan Konstanta</h2>
+          <p class="fw-normal">
+            Berikut adalah cara mendeklarasikan konstanta dalam C++:
+          </p>
+          <div class="fluid-container">
+            <div class="card">
+                <!-- Header -->
+                <div class="editor-header">
+                    <div class="circle red"></div>
+                    <div class="circle yellow"></div>
+                    <div class="circle green"></div>
+                    <div class="ms-3">Contoh Deklarasi Konstanta</div>
+                </div>
+    
+                <!-- Code Container -->
+                <div class="code-container">
+                    <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    const int myNum = 15; // Nilai myNum tidak dapat diubah
+    cout << myNum;
+    return 0;
+}
+                    </pre>
+                </div>
+    
+                <!-- Button -->
+                <div class="btn-container">
+                    <a href="#" class="btn-try">Coba Program »</a>
+                </div>
+            </div>
+          </div>
+    
+          <br>
+    
+          <h2>Penggunaan Konstanta</h2>
+          <p class="fw-normal">
+            Konstanta sering digunakan untuk mendefinisikan nilai yang tidak berubah sepanjang eksekusi program, seperti:
+          </p>
+          <div class="fluid-container">
+            <div class="card">
+                <div class="code-container">
+                    <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    const int minutesPerHour = 60;
+    const float PI = 3.14;
+
+    cout << "Menit per jam: " << minutesPerHour << endl;
+    cout << "Nilai PI: " << PI;
+    return 0;
+}
+                    </pre>
+                </div>
+            </div>
+          </div>
+    
+          <br>
+    
+          <h2>Kesalahan Umum</h2>
+          <p class="fw-normal">
+            Jika Anda mencoba mengubah nilai konstanta setelah deklarasi, program akan menghasilkan error:
+          </p>
+          <div class="fluid-container">
+            <div class="card">
+                <div class="code-container">
+                    <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    const int myNum = 15;
+    // myNum = 10; // Error: myNum adalah read-only
+    cout << myNum;
+    return 0;
+}
+                    </pre>
+                </div>
+            </div>
+          </div>
+    
+          <br>
+    
+          <h2>Keuntungan Menggunakan Konstanta</h2>
+          <ul>
+            <li>Melindungi nilai agar tidak diubah secara tidak sengaja.</li>
+            <li>Memudahkan pembacaan kode dengan memberikan arti pada nilai tetap.</li>
+            <li>Meningkatkan keamanan program dengan mencegah perubahan nilai yang tidak diinginkan.</li>
+          </ul>
+    
+          <div class="text-center mt-4">
+            <a href="#" class="btn btn-primary">Selanjutnya</a>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="KonstantaCPP" class="section active-section">
+          <h1>Konstanta dalam C++</h1>
+          <hr class="border border-primary border-2 opacity-50">
+          <br>
+          <p class="h3">Apa itu Konstanta?</p>
+          <p class="fw-normal">
+            Konstanta dalam <span class="text-primary fw-bold">C++</span> adalah variabel yang nilainya tidak dapat diubah setelah dideklarasikan. 
+            Untuk mendeklarasikan konstanta, gunakan kata kunci <code>const</code> diikuti oleh tipe data dan nilai yang ingin ditetapkan.
+          </p>
+          <br>
+    
+          <h2>Cara Mendeklarasikan Konstanta</h2>
+          <p class="fw-normal">
+            Berikut adalah cara mendeklarasikan konstanta dalam C++:
+          </p>
+          <div class="fluid-container">
+            <div class="card">
+                <!-- Header -->
+                <div class="editor-header">
+                    <div class="circle red"></div>
+                    <div class="circle yellow"></div>
+                    <div class="circle green"></div>
+                    <div class="ms-3">Contoh Deklarasi Konstanta</div>
+                </div>
+    
+                <!-- Code Container -->
+                <div class="code-container">
+                    <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    const int myNum = 15; // Nilai myNum tidak dapat diubah
+    cout << myNum;
+    return 0;
+}
+
+
+LAGI TIDUR
+                    </pre>
+                </div>
+    
+                <!-- Button -->
+                <div class="btn-container">
+                    <a href="#" class="btn-try">Coba Program »</a>
+                </div>
+            </div>
+          </div>
+    
+          <br>
+    
+          <h2>Penggunaan Konstanta</h2>
+          <p class="fw-normal">
+            Konstanta sering digunakan untuk mendefinisikan nilai yang tidak berubah sepanjang eksekusi program, seperti:
+          </p>
+          <div class="fluid-container">
+            <div class="card">
+                <div class="code-container">
+                    <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    const int minutesPerHour = 60;
+    const float PI = 3.14;
+
+    cout << "Menit per jam: " << minutesPerHour << endl;
+    cout << "Nilai PI: " << PI;
+    return 0;
+}
+                    </pre>
+                </div>
+            </div>
+          </div>
+    
+          <br>
+    
+          <h2>Kesalahan Umum</h2>
+          <p class="fw-normal">
+            Jika Anda mencoba mengubah nilai konstanta setelah deklarasi, program akan menghasilkan error:
+          </p>
+          <div class="fluid-container">
+            <div class="card">
+                <div class="code-container">
+                    <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    const int myNum = 15;
+    // myNum = 10; // Error: myNum adalah read-only
+    cout << myNum;
+    return 0;
+}
+                    </pre>
+                </div>
+            </div>
+          </div>
+    
+          <br>
+    
+          <h2>Keuntungan Menggunakan Konstanta</h2>
+          <ul>
+            <li>Melindungi nilai agar tidak diubah secara tidak sengaja.</li>
+            <li>Memudahkan pembacaan kode dengan memberikan arti pada nilai tetap.</li>
+            <li>Meningkatkan keamanan program dengan mencegah perubahan nilai yang tidak diinginkan.</li>
+          </ul>
+    
+          <div class="text-center mt-4">
+            <a href="#" class="btn btn-primary">Selanjutnya</a>
+          </div>
+        </div>
+    </div>
+
+  
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

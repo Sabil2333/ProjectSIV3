@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript | Functions</title>
+
+    <link href="./output.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <!-- component -->
+    <div class="container flex flex-col mx-auto bg-white">
+        <aside class="group/sidebar flex flex-col shrink-0 lg:w-[300px] w-[250px] transition-all duration-300 ease-in-out m-0 fixed z-40 inset-y-0 left-0 bg-white border-r border-r-dashed border-r-neutral-200 sidenav fixed-start loopple-fixed-start" id="sidenav-main">
+        <div class="hidden border-b border-dashed lg:block dark:border-neutral-700/70 border-neutral-200"></div>
+
+        <div class="flex items-center justify-between px-8 py-5">
+            <div class="flex items-center mr-5">
+                <div class="mr-2 ">
+                    <a href="./index-js.html" class="text-[1.5rem] text-secondary-inverse font-bold text-stone-700">
+                        Learn Javascript
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hidden border-b border-dashed lg:block dark:border-neutral-700/70 border-neutral-200"></div>
+        <div class="relative pl-3 my-5">
+            <div class="flex flex-col w-full font-medium">
+            <!-- menu item -->
+            <div>
+                <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                <a href="./js-basics.html" class="hover:text-stone-200 flex items-center flex-grow text-[1.15rem]  text-stone-500 ">JS Basics</a>
+                </span>
+            </div>
+            <!-- menu item -->
+            <div>
+                <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                <a href="./js-functions.html" class="flex items-center flex-grow text-[1.15rem] text-yellow-400">JS Functions</a>
+                </span>
+            </div>
+            <!-- menu item -->
+            <div>
+                <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                <a href="./js-classes.html" class="hover:text-stone-200 flex items-center flex-grow text-[1.15rem]  text-stone-500 ">JS Classes</a>
+                </span>
+            </div>
+
+            </div>
+        </div>
+        </aside>        
+        <div class="flex flex-wrap ml-8 my-8">
+            <div class="w-full max-w-full ml-80">
+                <h3 class="text-5xl my-8">JavaScript Function Definitions</h3>
+                <p class="my-4 text-m">
+                    JavaScript functions are defined with the function keyword.
+                    <br>
+                    You can use a function declaration or a function expression.
+                </p>
+                <div class="h-[1px] bg-stone-300 my-4"></div>
+
+                <!---->
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        Function Declarations
+                    </p>
+                    <p class="my-4 text-m">
+                        Declared functions are not executed immediately. They are "saved for later use", and will be executed later, 
+                        <br>
+                        when they are invoked (called upon).
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+function functionName(parameters) {
+    // code to be executed
+} 
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+                <!---->
+                <!---->
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        Function Expressions
+                    </p>
+                    <p class="my-4 text-m">
+                        A JavaScript function can also be defined using an expression.                        
+                        <br>
+                        A function expression can be stored in a variable:                    
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+const x = function (a, b) {return a * b}; 
+let z = x(4, 3); 
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+                <!---->
+                <!---->
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        The Function() Constructor
+                    </p>
+                    <p class="my-4 text-m">
+                        As you have seen in the previous examples, JavaScript functions are defined with the function keyword.                        
+                        <br>
+                        Functions can also be defined with a built-in JavaScript function constructor called Function().
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+const myFunction = new Function("a", "b", "return a * b");
+
+let x = myFunction(4, 3); 
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+                <!---->
+                <!---->
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        Functions Can Be Used as Values
+                    </p>
+                    <p class="my-4 text-m">
+                        JavaScript functions can be used as values:                    
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+function myFunction(a, b) {
+    return a * b;
+}
+
+let x = myFunction(4, 3); 
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+                <!---->
+                <!---->
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        Functions are Objects
+                    </p>
+                    <p class="my-4 text-m">
+                        The typeof operator in JavaScript returns "function" for functions.
+                        <br>
+                        But, JavaScript functions can best be described as objects.
+                        <br>
+                        JavaScript functions have both properties and methods.
+                        <br>
+                        The arguments.length property returns the number of arguments received when the function was invoked:
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+function myFunction(a, b) {
+    return a * b;
+}
+
+let text = myFunction.toString(); 
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+                <!---->
+                
+
+                <!---->
+                <div class="bagian">
+                    <p class="my-4 text-3xl">
+                        Function Declarations
+                    </p>
+                    <p class="my-4 text-m">
+                        Declared functions are not executed immediately. They are "saved for later use", and will be executed later, 
+                        <br>
+                        when they are invoked (called upon).
+                    </p>
+    
+<div class="bg-stone-300 text-stone-700 px-4 py-1 rounded-md shadow-md inline-block">
+<pre class="overflow-x-auto">
+<code class="block whitespace-pre font-mono">
+function functionName(parameters) {
+    // code to be executed
+} 
+</code>
+</pre>
+</div>                  
+                    <div class="h-[1px] bg-stone-300 my-4"></div>
+                </div>
+                <!---->
+
+
+
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html>
